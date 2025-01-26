@@ -22,11 +22,9 @@ Welcome to my personal portfolio website project! This project is built using **
 portfolio-website/
 ├── backend/                  # FastAPI backend code
 │   ├── main.py               # FastAPI application entry point
-│   ├── models/               # Database models 
+│   ├── models/               # Database models (if any)
 │   ├── routes/               # API routes
 │   └── templates/            # Jinja2 templates for rendering HTML
-│   ├── Dockerfile            # Docker configuration
-│   ├── requirements.txt      # Python dependencies
 ├── frontend/                 # Frontend assets
 │   ├── css/                  # CSS files
 │   ├── js/                   # JavaScript files
@@ -35,9 +33,8 @@ portfolio-website/
 │   ├── __init__.py
 │   ├── test_routes.py        # Tests for API routes
 │   └── test_models.py        # Tests for database models (if any)
+├── Dockerfile                # Docker configuration
+├── requirements.txt          # Python dependencies
 ├── .gitignore                # Files and directories to ignore in Git
-├── docker-compose.test.yml   # Development docker compose file
-├── docker-compose.yml        # Production docker compose file
 ├── README.md                 # Project documentation
-├── LICENSE                   # MIT Standard License
 └── pyproject.toml            # (Optional) Poetry or PDM configuration
