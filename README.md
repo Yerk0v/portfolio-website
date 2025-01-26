@@ -20,21 +20,21 @@ Welcome to my personal portfolio website project! This project is built using **
 ## Project Structure
 
 portfolio-website/
-├── backend/                  # FastAPI backend code
-│   ├── main.py               # FastAPI application entry point
-│   ├── models/               # Database models (if any)
-│   ├── routes/               # API routes
-│   └── templates/            # Jinja2 templates for rendering HTML
-├── frontend/                 # Frontend assets
-│   ├── css/                  # CSS files
-│   ├── js/                   # JavaScript files
-│   └── images/               # Images and icons
-├── tests/                    # Unit and integration tests
+├── backend/                  
+│   ├── main.py               
+│   ├── models/              
+│   ├── routes/               
+│   └── templates/            
+├── frontend/                
+│   ├── css/                 
+│   ├── js/                   
+│   └── images/               
+├── tests/                    
 │   ├── __init__.py
-│   ├── test_routes.py        # Tests for API routes
-│   └── test_models.py        # Tests for database models (if any)
-├── Dockerfile                # Docker configuration
-├── requirements.txt          # Python dependencies
-├── .gitignore                # Files and directories to ignore in Git
-├── README.md                 # Project documentation
-└── pyproject.toml            # (Optional) Poetry or PDM configuration
+│   ├── test_routes.py        
+│   └── test_models.py       
+├── Dockerfile               
+├── requirements.txt         
+├── .gitignore               
+├── README.md                
+└── pyproject.toml            
