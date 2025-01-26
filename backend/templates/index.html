@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Mi Portfolio - {{ super() }}{% endblock %}
+
+{% block content %}
+    <!-- Sección About -->
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+            <h1 class="mb-0">
+                <span class="text-primary">Yerko Muñoz Escobar</span>
+            </h1>
+            <div class="subheading mb-5">
+                Machine Learning Engineer 
+                <a href="yerkomunozescobar@gmail.com">yerkomunozescobar@gmail.com</a>
+            </div>
+            <p class="lead mb-5">Especializado en desarrollo web con Python y FastAPI. Pasión por crear soluciones eficientes y escalables.</p>
+            <div class="social-icons">
+                <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
+                <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+            <h2 class="mb-5">Proyectos Destacados</h2>
+            
+            {% for project in projects %}
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                <div class="resume-content mr-auto">
+                    <h3 class="mb-0">{{ project.title }}</h3>
+                    <div class="subheading mb-3">{{ project.tech_stack }}</div>
+                    <p>{{ project.description }}</p>
+                    <a href="{{ project.url }}" class="btn btn-primary" target="_blank">
+                        Ver Demo <i class="fas fa-external-link-alt ms-2"></i>
+                    </a>
+                </div>
+                <div class="resume-date text-md-right">
+                    <span class="text-primary">{{ project.date }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+            <h2 class="mb-5">Habilidades</h2>
+            <div class="subheading mb-3">Tecnologías Principales</div>
+            <ul class="list-inline dev-icons">
+                <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                <li class="list-inline-item"><i class="fab fa-react"></i></li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

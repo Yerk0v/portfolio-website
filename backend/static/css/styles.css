@@ -1,0 +1,108 @@
+/* static/css/styles.css */
+
+/*** Variables y tema ***/
+:root {
+    --primary-color: #2d3436;       /* Color principal (navbar, títulos) */
+    --accent-color: #0984e3;        /* Botones, links hover */
+    --text-color: #333;             /* Texto normal */
+    --bg-light: #f9f9f9;            /* Fondos claros */
+    --transition: all 0.3s ease;    /* Transiciones suaves */
+    --bg-color: #ffffff;            /* Fondo general (light mode) */
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --primary-color: #e0e0e0;       /* Ajuste para dark mode */
+  }
+  
+  /*** Base styles ***/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+  }
+  
+  /*** Componentes del template ***/
+  /* Navbar lateral */
+  #sideNav {
+    background: var(--primary-color) !important;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    transition: var(--transition);
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--accent-color) !important;
+  }
+  
+  /* Tarjetas de proyectos (tu versión mejorada) */
+  .project-card {
+    background: var(--bg-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .project-info {
+    padding: 1.5rem;
+    background: rgba(0,0,0,0.03);
+  }
+  
+  /*** Animaciones ***/
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /*** Responsive Design ***/
+  @media (max-width: 992px) {
+    /* Ajustes para móviles */
+    body {
+      padding-left: 0 !important;
+    }
+    
+    #sideNav {
+      position: relative !important;
+      width: 100% !important;
+      height: auto !important;
+    }
+    
+    .project-card {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Ajustes específicos para móviles pequeños */
+    h1 {
+      font-size: 4rem !important;
+      line-height: 4.5rem !important;
+    }
+    
+    .project-info {
+      position: static !important;
+      background: transparent !important;
+    }
+  }

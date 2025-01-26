@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Portfolio Personal",
+        "description": "Mi propio portfolio desarrollado con FastAPI y HTML/CSS.",
+        "image": "/static/img/project1.jpg",
+        "url": "https://github.com/tu-usuario/tu-portfolio",
+        "tags": ["HTML", "CSS", "FastAPI"]
+    },
+    {
+        "title": "E-commerce",
+        "description": "Plataforma de ventas online con carrito de compras.",
+        "image": "/static/img/project2.jpg",
+        "url": "https://demo-ecommerce.com",
+        "tags": ["React", "Node.js", "MongoDB"]
+    },
+    {
+        "title": "Blog Tecnológico",
+        "description": "Blog sobre desarrollo web con sistema de comentarios.",
+        "image": "/static/img/project3.jpg",
+        "url": "https://mi-blog-tech.com",
+        "tags": ["Python", "Django", "PostgreSQL"]
+    }
+]
