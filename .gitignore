@@ -46,7 +46,7 @@ yarn-error.log*
 frontend/css/*.map
 frontend/js/*.map
 *.min.js
-*.min.css
+#*.min.css
 
 # IDE/Editor
 .vscode/
